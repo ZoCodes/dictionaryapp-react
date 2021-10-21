@@ -13,7 +13,9 @@ function App() {
           <Dictionary />
         </main>
 
-        <footer className="text-center">Coded by ZoCodes</footer>
+        <footer className="app-footer">
+          <small>Coded by ZoCodes</small>
+        </footer>
       </div>
     </div>
   );

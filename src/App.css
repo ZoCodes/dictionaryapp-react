@@ -2,3 +2,8 @@
   margin-top: 15px;
   margin-left: 2px;
 }
+
+.App .app-footer {
+  text-align: center;
+  margin: 30px 0;
+}
