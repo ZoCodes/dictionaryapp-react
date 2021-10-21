@@ -4,6 +4,10 @@ import "./Dictionary.css";
 export default function Dictionary() {
   let [keyphrase, setKeyphrase] = useState("");
 
+  function handleWordSearch(event) {
+    setKeyphrase(event.target.value);
+  }
+
   function search(event) {
     event.preventDefault();
     alert("Searching");
@@ -11,7 +15,7 @@ export default function Dictionary() {
   return (
     <div className="Dictionary">
       <form onSubmit={search}>
-        <input type="search" autoFocus={true} />
+        <input type="search" autoFocus={true} onChange={handleWordSearch} />
       </form>
     </div>
   );
