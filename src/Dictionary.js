@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import Definition from "./Definition";
+import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyphrase, setKeyphrase] = useState("");
-  let [definition, setDefinition] = useState(null);
+  let [results, setResults] = useState(null);
 
   function handleApiResponse(response) {
-    setDefinition(response.data[0]);
+    setResults(response.data[0]);
     //console.log(response.data[0].meaning[0].definitions[0].definition);
   }
 
@@ -31,7 +31,7 @@ export default function Dictionary() {
       <form onSubmit={search}>
         <input type="search" autoFocus={true} onChange={handleWordSearch} />
       </form>
-      <Definition definition={definition} />
+      <Results results={results} />
     </div>
   );
 }
