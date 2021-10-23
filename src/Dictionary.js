@@ -6,7 +6,7 @@ export default function Dictionary() {
   let [keyphrase, setKeyphrase] = useState("");
 
   function handleApiResponse(response) {
-    console.log(response);
+    console.log(response.data[0]);
   }
 
   function handleWordSearch(event) {
@@ -15,9 +15,8 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyphrase} definition`);
 
-    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en_US/hello`;
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en_UK/${keyphrase}`;
     axios.get(apiURL).then(handleApiResponse);
   }
 
