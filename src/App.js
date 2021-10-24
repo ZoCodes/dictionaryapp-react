@@ -14,7 +14,24 @@ function App() {
         </main>
 
         <footer className="app-footer">
-          <small>Coded by ZoCodes</small>
+          <small>
+            Coded by{" "}
+            <a
+              href="https://www.linkedin.com/in/ZoeElizabethBlogg"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              ZoCodes
+            </a>{" "}
+            and the source can be found on{" "}
+            <a
+              href="https://github.com/ZoCodes/dictionaryapp-react"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              GitHub
+            </a>
+          </small>
         </footer>
       </div>
     </div>
