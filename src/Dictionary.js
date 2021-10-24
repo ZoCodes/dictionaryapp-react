@@ -10,7 +10,6 @@ export default function Dictionary() {
 
   function handleApiResponse(response) {
     setResults(response.data[0]);
-    //console.log(response.data[0].meaning[0].definitions[0].definition);
   }
 
   function handleWordSearch(event) {
@@ -21,7 +20,6 @@ export default function Dictionary() {
     event.preventDefault();
 
     //documentation: https://dictionaryapi.dev/ //
-
     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyphrase}`;
     axios.get(apiURL).then(handleApiResponse);
   }
