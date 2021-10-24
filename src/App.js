@@ -7,7 +7,9 @@ function App() {
       <div className="container">
         <header className="App-header">
           <h1>Don't gobblefunk around with words....</h1>
-          <h2> - Roald Dahl</h2>
+          <h2>
+            <em>- Roald Dahl</em>
+          </h2>
         </header>
         <main>
           <Dictionary />

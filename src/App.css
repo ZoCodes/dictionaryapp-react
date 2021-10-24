@@ -1,3 +1,18 @@
+body {
+  background: #efecea;
+}
+
+h1 {
+  color: #334854;
+}
+
+h2 {
+  color: #f9c535;
+}
+
+a {
+  color: #e04462;
+}
 .App header {
   margin-top: 15px;
   margin-left: 2px;
