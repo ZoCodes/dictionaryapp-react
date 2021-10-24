@@ -1,4 +1,6 @@
 .Results h2 {
   text-transform: capitalize;
+  font-weight: bold;
   color: #f9c535;
+  line-height: 1;
 }
