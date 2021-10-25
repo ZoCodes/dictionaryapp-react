@@ -1,0 +1,17 @@
+.Synonyms {
+  margin: 10px 0 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.Synonyms h5 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e04462;
+  line-height: 1.5;
+}
+
+.Synonyms li {
+  display: inline;
+  padding-right: 10px;
+}
