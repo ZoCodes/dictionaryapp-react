@@ -8,9 +8,9 @@ export default function Phonetics(props) {
     <div className="Phonetics">
       <a href={props.phonetic.audio} target="_blank" rel="noreferrer noopener">
         Listen
-      </a>
-      <br />
-      {props.phonetic.text}
+      </a>{" "}
+      {""}
+      <span className="text"> {props.phonetic.text}</span>
     </div>
   );
 }

@@ -6,9 +6,21 @@
   line-height: 1.5;
 }
 
-.Meaning h5 {
-  font-size: 20px;
+.Meaning .definition {
+  font-size: 18px;
   font-weight: bold;
   color: #e04462;
   line-height: 1.5;
+}
+
+.Meaning .example {
+  font-size: 16px;
+  font-style: italic;
+  color: #e04462;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+::first-letter {
+  text-transform: capitalize;
 }
