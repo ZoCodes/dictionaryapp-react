@@ -4,10 +4,13 @@ body {
 
 h1 {
   color: #334854;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 h2 {
   color: #e04462;
+  font-size: 20px;
 }
 
 a {

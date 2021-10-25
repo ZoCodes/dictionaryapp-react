@@ -1,0 +1,14 @@
+.Meaning h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e04462;
+  line-height: 1.5;
+}
+
+.Meaning h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e04462;
+  line-height: 1.5;
+}
