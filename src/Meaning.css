@@ -1,5 +1,4 @@
 .Meaning h3 {
-  text-transform: capitalize;
   font-size: 30px;
   font-weight: bold;
   color: #e04462;
@@ -11,6 +10,7 @@
   font-weight: bold;
   color: #e04462;
   line-height: 1.5;
+  display: inline-block;
 }
 
 .Meaning .example {
@@ -19,8 +19,12 @@
   color: #e04462;
   line-height: 1.5;
   opacity: 0.6;
+  display: inline-block;
 }
 
-::first-letter {
-  text-transform: capitalize;
+.Meaning .definition:first-letter {
+  text-transform: uppercase;
+}
+.Meaning .example:first-letter {
+  text-transform: uppercase;
 }
