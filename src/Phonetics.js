@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Phonetics.css";
+
 export default function Phonetics(props) {
   // add an icon of a listen image to play sound rather than the word listen
   return (
