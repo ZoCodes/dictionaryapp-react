@@ -2,15 +2,21 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import Results from "./Results";
+import Photos from "./Photos";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyphrase, setKeyphrase] = useState("Forest");
   let [results, setResults] = useState(null);
   let [ready, setReady] = useState(false);
+  let [photos, setPhotos] = useState(null);
 
   function handleApiResponse(response) {
     setResults(response.data[0]);
+  }
+
+  function handlePexels(response) {
+    setPhotos(response.data.photos);
   }
 
   function handleWordSearch(event) {
@@ -21,6 +27,11 @@ export default function Dictionary() {
     //documentation: https://dictionaryapi.dev/ //
     let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyphrase}`;
     axios.get(apiURL).then(handleApiResponse);
+
+    let pexelsApiKey = `563492ad6f9170000100000150ef8c7eb8f64a08bd1a1601c8c6c54f`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyphrase}&per_page=9`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexels);
   }
 
   function handleSubmit(event) {
@@ -52,6 +63,7 @@ export default function Dictionary() {
           </div>
         </section>
         <Results results={results} />
+        <Photos photos={photos} />
       </div>
     );
   } else {

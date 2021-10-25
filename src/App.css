@@ -17,6 +17,11 @@ h2 {
 a {
   color: #e04462;
 }
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+}
 .App header {
   padding: 30px;
   margin: 20px;
